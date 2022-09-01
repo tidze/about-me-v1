@@ -32,8 +32,8 @@
     </style>
 </head>
 
-<body>
-    <x-navbar />
+<body class="bg-zinc-900">
+    <x-navbar/>
     @yield('content')
 </body>
 
