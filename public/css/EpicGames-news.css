@@ -1,0 +1,199 @@
+/***********************************EpicGames-News*****************************************/
+.box-type-alpha * {
+    box-sizing: border-box;
+
+}
+
+.box-type-alpha {
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    width: 75vw;
+    /*height: 500px;*/
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.box-type-alpha-label {
+    /*border:1px solid white;*/
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 100%;
+    margin: 10px 0;
+    color: white;
+    font-family: "OpenSans-Regular";
+    z-index: 1;
+}
+
+.card-view-type-alpha {
+    /*border: 1px solid red;*/
+    width: 49%;
+    height: 90%;
+    font-family: "OpenSans-SemiBold";
+    font-size: 13px;
+}
+
+.card-view-type-alpha:hover p:nth-of-type(3) {
+    border-bottom: 1px solid white;
+}
+
+.white-effect-type-alpha {
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    opacity: 0;
+    transition: all 200ms linear;
+
+}
+
+.card-view-type-alpha:hover .white-effect-type-alpha {
+    opacity: 0.3;
+}
+
+.card-view-type-alpha > a {
+    /*border:1px solid gold;*/
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.card-view-type-alpha > a > div:nth-of-type(1) {
+    /*border: darkred 1px solid;*/
+    width: 100%;
+    position: relative;
+}
+
+.card-view-type-alpha img {
+    /*display: none;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #484848;
+    border-radius: 5px;
+}
+
+.card-view-type-alpha p {
+    /*border: 1px solid darkred;*/
+    /*margin: 0;*/
+}
+
+.card-view-type-alpha p:nth-of-type(1) {
+    margin-top: 10px;
+    color: #8a8a8a;
+    font-size: 12px;
+    font-family: "OpenSans-SemiBold";
+}
+
+.card-view-type-alpha p:nth-of-type(3) {
+    display: inline-block;
+    border-bottom: 1px solid #484848;
+    font-size: 13px;
+    transition: all 200ms linear;
+
+}
+
+.box-type-alpha-beta * {
+    box-sizing: border-box;
+    /*border:1px solid darkred;*/
+}
+
+.box-type-alpha-beta {
+    /*border: 2px solid red;*/
+    width: 75vw;
+    /*height: 500px;*/
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*margin-top: 10px;*/
+}
+
+.card-view-type-beta {
+    width: 100%;
+    height: 180px;
+    /*border: 1px solid darkred;*/
+    font-family: "OpenSans-SemiBold";
+    font-size: 13px;
+    border-top: 1px solid white;
+
+}
+
+.card-view-type-beta:hover .white-effect-type-alpha {
+    opacity: 0.3;
+}
+
+.card-view-type-beta:hover .card-view-type-beta-info-holder p:nth-of-type(3) {
+    border-bottom: 1px solid white;
+}
+
+.card-view-type-beta > a {
+    /*border: 1px solid gold;*/
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+
+}
+
+.card-view-type-beta-image-holder {
+    /*border: 1px solid white;*/
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    /*display: inline-block;*/
+}
+
+.card-view-type-beta-image-holder > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #484848;
+    position: absolute;
+    left: 0;
+}
+
+.card-view-type-beta-info-holder {
+    /*display: inline-block;*/
+    padding-left: 10px;
+    /*border: 1px solid deeppink;*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*align-content: center;*/
+    flex-flow: row wrap;
+}
+
+.card-view-type-beta-info-holder p {
+    /*border: 1px solid darkred;*/
+    margin: 0;
+}
+
+.card-view-type-beta-info-holder p:nth-of-type(1) {
+    color: #8a8a8a;
+
+}
+
+.card-view-type-beta-info-holder p:nth-of-type(2) {
+
+}
+
+.card-view-type-beta-info-holder p:nth-of-type(3) {
+    margin-bottom: 0;
+    align-self: flex-end;
+    border-bottom: 1px solid #484848;
+    transition: all 200ms linear;
+    /*align-content: initial;*/
+}

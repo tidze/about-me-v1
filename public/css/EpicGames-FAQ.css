@@ -1,0 +1,48 @@
+@media only screen and (max-width: 767px){
+    #main-content-container {
+        /*border: 1px solid red;*/
+        padding: 20px;
+        color: #1f1f1f;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #main-content-container {
+        /*border: 1px solid red;*/
+        padding: 20px;
+        color: #1f1f1f;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #main-content-container {
+        /*border: 1px solid red;*/
+        padding: 0 90px;
+        color: #1f1f1f;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: white;
+}
+
+#main-content-container h1:nth-of-type(1) {
+    font-family: "OpenSans-Bold";
+    text-align: center;
+    font-size: 23px;
+}
+
+#main-content-container p:nth-of-type(1) {
+    font-style: italic;
+}
+
+#main-content-container p {
+}
+
+#main-content-container strong {
+    color: #484848;
+}
