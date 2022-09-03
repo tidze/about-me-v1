@@ -7,15 +7,18 @@
     </div>
     <div class="row my-2 px-2">
         <div style="font-family: Bzar;" class="flex justify-center items-center">
-            <button type="button" 
-            class="text-gray-900 bg-red border-2 dark:border-gray-700 focus:outline-none 
+            <button type="button"
+                class="text-gray-900 bg-red border-2 dark:border-gray-700 focus:outline-none 
             hover:bg-red  focus:ring-gray-200 font-medium rounded-full 
-            text-sm" >
-                <a style="dark:border-grey-900 text-decoration: none;" href="{{ route('epicgames') }}" 
-                class="dark:text-white text-white p-2 d-block text-center hover:text-decoration-none
+            text-sm">
+                <a style="dark:border-grey-900 text-decoration: none;" href="{{ route('epicgames') }}"
+                    class="dark:text-white text-white p-2 d-block text-center hover:text-decoration-none
                 px-5 py-2.5 mr-2 w-full dark:hover:text-red-900 hover:text-red-900">
                     نمونه کار قالب سایت کلیک کنید
                 </a>
             </button>
-    </div>
+        </div>
+        <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+            Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+        </div>
 @endsection
