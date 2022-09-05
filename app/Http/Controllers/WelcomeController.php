@@ -11,9 +11,10 @@ class WelcomeController extends Controller
 {
     public function __invoke()
     {
-        $users = User::all();
-        $posts = Post::all();
-        $procedure = DB::select('CALL UsersWithPosts()');
-        return view('welcome',['posts'=>$posts,'users'=>$users,'procedure'=>$procedure]);
+        // $users = User::all();
+        // $posts = Post::all();
+        // $procedure = DB::select('CALL UsersWithPosts()');
+        // return view('welcome',['posts'=>$posts,'users'=>$users,'procedure'=>$procedure]);
+        return view('welcome');
     }
 }
