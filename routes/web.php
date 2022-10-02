@@ -4,10 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CGCareer;
 use App\Http\Controllers\Doctor\DoctorController;
+use App\Http\Controllers\GameDevelopement;
 use App\Http\Controllers\OrderShipmentController;
 use App\Http\Controllers\User\PostController;
 use App\Http\Controllers\MyFtpController;
+use App\Http\Controllers\WebDevelopement;
 use Illuminate\Http\Request;
 use App\Http\Controllers\WelcomeController;
 
@@ -22,10 +25,16 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
-Route::get('/', WelcomeController::class)->name('home');
 
-Route::get('ftp_upload',MyFtpController::class)->name('ftp_upload');
-Route::post('ftp_upload',[MyFtpController::class,'upload'])->name('ftp_upload');
+Route::get('/', WelcomeController::class)->name('home');
+Route::get('/components', function(){return view('components.footer');});
+
+Route::get('/webdev', WebDevelopement::class)->name('web-developement');
+Route::get('/gamedev', GameDevelopement::class)->name('game-developement');
+Route::get('/cg', CGCareer::class)->name('cg-career');
+
+// Route::get('ftp_upload',MyFtpController::class)->name('ftp_upload');
+// Route::post('ftp_upload',[MyFtpController::class,'upload'])->name('ftp_upload');
 
 Route::view('epicgames','epicgames.EpicGames')->name('epicgames');
 Route::view('epicgames-faq','epicgames.EpicGames-FAQ')->name('epicgames-faq');
@@ -63,7 +72,7 @@ Route::delete('user/{user_id}/posts/{post_id}/delete/',[PostController::class,'d
 Route::get('user/{user_id}/posts/{post_id}/update',[PostController::class,'edit'])->name('user.post.update')->middleware('auth');
 Route::post('user/{user_id}/posts/{post_id}/update',[PostController::class,'update'])->name('user.post.update')->middleware('auth');
 
-//Admin routes ... 
+//Admin routes ...
 // Route::prefix('admin')->name('admin.')->group(function () {
 // Route::middleware(['guest:admin', 'PreventBackHistory'])->group(function () {
 // Route::view('/login', 'dashboard.admin.login')->name('login');
@@ -100,3 +109,6 @@ Route::prefix('doctor')->name('doctor.')->group(function () {
 
 // mailing...
 // Route::get('/send', OrderShipmentController::class);
+// Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

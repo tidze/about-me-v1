@@ -35,6 +35,9 @@
 <body class="bg-zinc-900">
     <x-navbar/>
     @yield('content')
+    <footer>
+        <x-footer></x-footer>
+    </footer>
 </body>
 
 </html>
