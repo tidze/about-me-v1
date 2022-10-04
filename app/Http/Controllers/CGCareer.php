@@ -14,6 +14,6 @@ class CGCareer extends Controller
      */
     public function __invoke(Request $request)
     {
-        dd("CG Carrer");
+        dd("CG Carrer Page");
     }
 }

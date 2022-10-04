@@ -14,6 +14,6 @@ class GameDevelopement extends Controller
      */
     public function __invoke(Request $request)
     {
-        // dd("create")
+        dd("Game Dev Page");
     }
 }
