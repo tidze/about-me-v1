@@ -44,7 +44,7 @@ class MyFtpController extends Controller
                 ftp_close($ftp_connection);
                 fclose($fp);
                 return redirect()->route('ftp_upload')->with('fail', 'Error Uploading File.');
-            }
+                            }
         }
     }
 }

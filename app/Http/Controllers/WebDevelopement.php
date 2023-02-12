@@ -14,6 +14,6 @@ class WebDevelopement extends Controller
      */
     public function __invoke(Request $request)
     {
-        dd('Web Developement Page');
+        return view('web_dev');
     }
 }

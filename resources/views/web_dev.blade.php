@@ -1,13 +1,12 @@
-@dd("Web Dev Page")
-<div style="font-family: Bzar;" class="flex justify-center items-center">
-    <button type="button"
-        class="text-gray-900 bg-red border-2 dark:border-gray-700 focus:outline-none
-        hover:bg-red  focus:ring-gray-200 font-medium rounded-full
-        text-sm">
-        <a style="dark:border-grey-900 text-decoration: none;" href="{{ route('epicgames') }}"
-            class="dark:text-white text-white p-4 d-block text-center hover:text-decoration-none
-            px-5 py-2.5 mr-2 w-full dark:hover:text-red-900 hover:text-red-900">
-            نمونه کار قالب سایت کلیک کنید
-        </a>
-    </button>
+{{-- @dd("Web Dev Page") --}}
+@extends('layouts.app')
+@section('content')
+<div class="flex flex-col items-center md:flex-row md:justify-center border bg-zinc-900">
+    <div class="border w-64 h-72 md:w-56 md:h-64 m-2 rounded cursor-pointer hover:bg-gradient-to-t hover:from-white">
+        <a href="{{ route('epicgames') }}" class="no-underline border border-red-600 block h-full">epic games</a>
+    </div>
+    <div class="border w-64 h-72 md:w-56 md:h-64 m-2 rounded cursor-pointer hover:bg-gradient-to-t hover:from-white">
+        <a href="{{ route('game-developement') }}" class="no-underline border border-red-600 block h-full">present&correct</a>
+    </div>
 </div>
+@endsection
